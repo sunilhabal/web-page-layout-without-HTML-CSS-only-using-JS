@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create Web Layout using js</title>
+    <style>
+      
+    </style>
+</head>
+<body id="s_body">
+    <script>
+        var h = document.createElement('Header');
+        h.innerHTML='Header';
+        console.log(h);
+        document.getElementById('s_body').appendChild(h);
+        document.querySelector('header').setAttribute('class','s_header');
+
+        document.body.style.margin='0px';
+
+        var x = document.getElementsByClassName('s_header');
+        x[0].style.width = '100%';
+        x[0].style.height='125px';
+        x[0].style.border='5px solid black';
+
+        var y = document.getElementsByClassName('Header');
+        x[0].style.color='red';
+        x[0].style.fontSize='50px';
+        x[0].style.textAlign='center';
+        x[0].style.lineHeight='100px';
+
+
+        var n = document.createElement('nav');
+        n.innerHTML='Nav';
+        console.log(n);
+
+        document.getElementById('s_body').appendChild(n);
+        document.querySelector('nav').setAttribute('class','s_nav');
+
+        var n = document.getElementsByClassName('s_nav');
+        n[0].style.width = '100%';
+        n[0].style.height = '75px';
+        n[0].style.fontSize = '50px';
+        n[0].style.border = '5px solid black';
+        n[0].style.color = 'red';
+        n[0].style.lineHeight = '75px';
+        n[0].style.textAlign = 'center';
+        
+        var section = document.createElement('section');
+        section.innerHTML='Main Area';
+        console.log(section);
+        document.getElementById('s_body').appendChild(section);
+        document.querySelector('section').setAttribute('class','s_section')
+        var section = document.getElementsByClassName('s_section');
+        section[0].style.width = '100%';
+        section[0].style.height = '500px';
+        section[0].style.fontSize = '50px';
+        section[0].style.lineHeight = '500px';
+        section[0].style.textAlign = 'center';
+        section[0].style.color = 'red';
+        section[0].style.border = '5px solid black';
+
+        var f = document.createElement('footer');
+        f.innerHTML='Footer';
+        console.log(f);
+        document.getElementById('s_body').appendChild(f);
+        document.querySelector('footer').setAttribute('class','s_footer');
+        
+        var f = document.getElementsByClassName('s_footer');
+        f[0].style.width = '100%'
+        f[0].style.height = '100px'
+        f[0].style.border = '5px solid black';
+        f[0].style.fontSize = '50px';
+        f[0].style.lineHeight = '100px';
+        f[0].style.textAlign = 'center';
+        f[0].style.color = 'red';
+
+
+        
+
+        
+
+        
+        
+
+    </script>
+</body>
+</html>
